@@ -1,38 +1,37 @@
-# 🏗️ GitHub Actions & CI/CD Mastery
+# Testing CI/CD & GitHub Actions
 
-Цей репозиторій є моїм навчальним майданчиком для опанування **GitHub Actions** та принципів **Continuous Integration / Continuous Deployment (CI/CD)**. Тут зібрані практичні вправи, складні workflow та найкращі практики автоматизації розробки.
+This repository serves as my primary learning environment for mastering **GitHub Actions** and **Continuous Integration / Continuous Deployment (CI/CD)** principles. It contains practical exercises, advanced workflows, and industry best practices for development automation.
 
-## 🚀 Що всередині?
+## 🚀 What's Inside?
 
-Проект структурований за рівнями складності, базуючись на курсі *DevOps Directive*:
+The project is structured by complexity levels, following the *DevOps Directive* curriculum:
 
-### 🟢 Core Features (Основи)
-- **Hello World**: Базова структура workflow.
-- **Triggers & Filters**: Налаштування запусків за подіями (`push`, `pull_request`, `workflow_dispatch`) та фільтрація за шляхами (`paths`).
-- **Secrets & Variables**: Безпечне керування конфіденційними даними.
-- **Passing Data**: Передача даних між кроками та джобами.
+### 🟢 Core Features
+- **Hello World**: Basic workflow structure and syntax.
+- **Triggers & Filters**: Configuring event-based triggers (`push`, `pull_request`, `workflow_dispatch`) and path-based filtering.
+- **Secrets & Variables**: Secure management of sensitive data and environment configuration.
+- **Passing Data**: Sharing information between steps and jobs.
 
-### 🟡 Advanced Features (Просунутий рівень)
-- **Matrix Strategy**: Паралельне тестування на різних ОС та версіях середовищ.
-- **Caching & Artifacts**: Оптимізація швидкості білдів та робота з артефактами.
-- **Reusable Workflows**: Створення модульних та перевикористовуваних пайплайнів.
-- **Composite Actions**: Власні кастомні дії для автоматизації рутини.
+### 🟡 Advanced Features
+- **Matrix Strategy**: Parallel testing across multiple Operating Systems and environment versions.
+- **Caching & Artifacts**: Build performance optimization and artifact management.
+- **Reusable Workflows**: Creating modular, scalable, and maintainable pipelines.
+- **Composite Actions**: Custom actions for automating repetitive tasks.
 
-### 🔴 Professional DevOps Practices
-- **Security First**: Використання мінімальних прав (`permissions`) та OIDC.
-- **Environment Management**: Налаштування середовищ (`staging`, `production`) з ручним підтвердженням деплою.
-- **Optimization**: Мінімізація часу виконання та вартості ресурсів.
+### 🛡️ Best Practices & Security
+- **Security First**: Implementing Principle of Least Privilege (`permissions`) and OIDC.
+- **Environment Management**: Configuring deployment environments (`staging`, `production`) with manual approval gates.
+- **Optimization**: Minimizing execution time and resource costs.
 
-## 🛠️ Технологічний стек
-- **CI/CD**: GitHub Actions
-- **Containers**: Docker
-- **IaC Concepts**: Terraform (coming soon)
-- **Environment**: Linux (Ubuntu)
+## 🛠️ Tech Stack
+- **GitHub Actions** (Orchestration)
+- **Docker** (Containerization)
+- **Shell Scripting** (Automation)
+- **Node.js / Python** (Testing environments)
 
-## 📈 Цілі навчання
-- Побудова надійних CI/CD пайплайнів для мікросервісів.
-- Автоматизація тестування, збірки та деплою.
-- Впровадження стандартів DevSecOps.
+## 📈 Learning Goals
+- Building resilient CI/CD pipelines for microservices.
+- Automating testing, building, and deployment processes.
+- Implementing DevSecOps standards.
 
----
-*Створено та підтримується як частина шляху до Junior/Middle DevOps Engineer.*
+*Created and maintained as part of the journey toward becoming a Junior/Middle DevOps Engineer.*
