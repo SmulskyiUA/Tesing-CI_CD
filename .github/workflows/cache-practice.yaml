@@ -12,13 +12,14 @@ jobs:
         id: cache-npm
         uses: actions/cache@v4
         with:
-          path: node_modules
-          key: npm-${{ hashFiles('package-lock.json') }}
+          path: actions_cache/node_modules
+          key: npm-${{ hashFiles('actions_cache/package-lock.json') }}
 
       - name: Show cache status
         run: echo "Cache hit? -> ${{ steps.cache-npm.outputs.cache-hit }}"
 
       - name: Install dependencies (timed)
+        working-directory: actions_cache
         run: |
           echo "Start: $(date +%s)"
           npm install
