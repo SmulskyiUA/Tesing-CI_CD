@@ -1,0 +1,25 @@
+name: Cache Practice
+
+on: workflow_dispatch   # запускаємо вручну кнопкою, щоб контролювати кожен запуск
+
+jobs:
+  test-cache:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Cache node_modules
+        id: cache-npm
+        uses: actions/cache@v4
+        with:
+          path: node_modules
+          key: npm-${{ hashFiles('package-lock.json') }}
+
+      - name: Show cache status
+        run: echo "Cache hit? -> ${{ steps.cache-npm.outputs.cache-hit }}"
+
+      - name: Install dependencies (timed)
+        run: |
+          echo "Start: $(date +%s)"
+          npm install
+          echo "End: $(date +%s)"
