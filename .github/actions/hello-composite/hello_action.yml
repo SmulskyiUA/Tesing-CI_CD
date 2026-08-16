@@ -1,0 +1,14 @@
+name: 'Hello Composite'
+description: 'Test composite action'
+inputs:
+  name:
+    description: 'Name to say hello'
+    required: false
+    default: 'World'
+runs:
+  using: "composite"
+  steps:
+    - run: echo "Hello, ${{ inputs.name }}!"
+      shell: bash
+    - run: echo "Composite action completed"
+      shell: bash
